@@ -36,7 +36,7 @@ struct QuizCollectionView: View {
                                    showingAlert = true
                                })
                         {
-                            Image(systemName: "plus")
+                            Image(systemName: "text.badge.plus")
                         }
                                .alert("Name quiz", isPresented: $showingAlert, actions: {
                                    // Any view other than Button would be ignored

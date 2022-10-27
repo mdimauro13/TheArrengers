@@ -17,6 +17,7 @@
 		5AC1658C2908141D00171040 /* QuestionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1658B2908141D00171040 /* QuestionEditorView.swift */; };
 		5AC1658E2908142C00171040 /* QuizCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1658D2908142C00171040 /* QuizCollectionView.swift */; };
 		5AC1659029081DF300171040 /* Folders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1658F29081DF300171040 /* Folders.swift */; };
+		5AC16594290AA89200171040 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC16593290AA89200171040 /* QuestionListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5AC1658B2908141D00171040 /* QuestionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionEditorView.swift; sourceTree = "<group>"; };
 		5AC1658D2908142C00171040 /* QuizCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionView.swift; sourceTree = "<group>"; };
 		5AC1658F29081DF300171040 /* Folders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folders.swift; sourceTree = "<group>"; };
+		5AC16593290AA89200171040 /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				5AC16562290813FC00171040 /* ContentView.swift */,
 				5AC1658B2908141D00171040 /* QuestionEditorView.swift */,
 				5AC1658D2908142C00171040 /* QuizCollectionView.swift */,
+				5AC16593290AA89200171040 /* QuestionListView.swift */,
 				5AC1658F29081DF300171040 /* Folders.swift */,
 				5AC16564290813FD00171040 /* Assets.xcassets */,
 				5AC16566290813FD00171040 /* The_Arrengers.entitlements */,
@@ -272,6 +275,7 @@
 				5AC16561290813FC00171040 /* The_ArrengersApp.swift in Sources */,
 				5AC1658C2908141D00171040 /* QuestionEditorView.swift in Sources */,
 				5AC1658E2908142C00171040 /* QuizCollectionView.swift in Sources */,
+				5AC16594290AA89200171040 /* QuestionListView.swift in Sources */,
 				5AC1659029081DF300171040 /* Folders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

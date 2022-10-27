@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+let  salvataggio = saveData(name: "1. When the French Revolution started?")
+let  salvataggio1 = saveData(name: "2. When the French Revolution ended?")
+let  salvataggio2 = saveData(name: "3. What type of government did the Constitution of 1791 create?")
+let  salvataggio3 = saveData(name: "4. What happened during the revolution?")
+let  salvataggio4 = saveData(name: "5. What were the most important events?")
+
 struct QuestionEditorView: View {
     @State private var searchText = "Search"
     @State var showingAlert : Bool = false
@@ -14,7 +20,9 @@ struct QuestionEditorView: View {
     @State private var textin: String = ""
     @State private var name = ""
     @FocusState private var nameIsFocused: Bool
-    
+    @State private var showDetails = false
+
+
     
     var body: some View {
         
@@ -29,17 +37,20 @@ struct QuestionEditorView: View {
                             
                             ForEach(folderCreation_array) { folder in
                                 ZStack{
-                                    Button{
+                                    Button{showDetails.toggle()
                                     }label: {
                                         ZStack{
                                             Image("folder")
                                                 .resizable()
                                                 .frame(width: 120, height: 120)
                                                 .foregroundColor(.black)
+                                                .padding()
                                             Text(folder.setname)
                                                 .padding()
                                         }
                                     }
+                                    NavigationLink("",destination:QuestionListView(saveDone: salvataggio,saveDone1:salvataggio1,saveDone2: salvataggio2,saveDone3: salvataggio3,saveDone4: salvataggio4),isActive: $showDetails)
+
                                 }
                             }
                         }
@@ -57,7 +68,7 @@ struct QuestionEditorView: View {
                                 showingAlert = true
                             })
                             {
-                                Image(systemName: "plus")
+                                Image(systemName: "folder.badge.plus")
                             }
                             .alert("Name folder", isPresented: $showingAlert, actions: {
                                 // Any view other than Button would be ignored
